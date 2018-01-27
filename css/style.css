@@ -1,0 +1,42 @@
+/* Your custom styles */
+body, html {
+    height: 100%;
+}
+
+.navbar {
+  height: 80px;
+  display: inline;
+  background-color: transparent;
+  border: none;
+  color: white;
+  z-index: 100;
+  transition: background-color 1s ease 0s;
+}
+
+.parallax-1 {
+    /* The image used */
+    background-image: url("../img/mountains.jpeg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-2 {
+    /* The image used */
+    background-image: url("../img/foreststream.gif");
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
