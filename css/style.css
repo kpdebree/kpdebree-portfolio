@@ -32,11 +32,68 @@ body, html {
     background-image: url("../img/foreststream.gif");
 
     /* Full height */
-    height: 100%;
+    height: 90%;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.parallax-3 {
+    /* The image used */
+    background-image: url("../img/summerbreeze.gif");
+
+    /* Full height */
+    height: 90%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.social.about-social-circle {
+  display: flex;
+  justify-content: center;
+}
+
+.social p {
+  display: inline-flex;
+  margin: 0;
+}
+
+
+.social p a {
+  width: 60px;
+  height: 60px;
+  font-size: 16px;
+  background: #51a3d2;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.social p a i {
+  font-size: 30px;
+}
+
+.social p a:hover, .social p a:active, .social p a:focus {
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.social p a:hover {
+  background: #393e46 !important;
+}
+
+#social-row {
+  margin: 2em 0 4em 0;
 }
