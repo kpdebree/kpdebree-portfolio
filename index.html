@@ -15,10 +15,66 @@
   <link href="css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
   <link href="css/style.css" rel="stylesheet">
+
+  <style>
+
+        .top-nav-collapse {
+            background-color: #387c42 !important; 
+        }
+        .navbar:not(.top-nav-collapse) {
+            background: transparent !important;
+        }
+        @media (max-width: 768px) {
+            .navbar:not(.top-nav-collapse) {
+                background: #387c42 !important;
+            } 
+        }
+        .intro-1 {
+            height: 1050px;
+        }
+        @media (min-width: 770px) and (max-width: 1025px) {
+            .intro-1 {
+                height: 750px;
+            }
+        }
+        @media (max-width: 740px) {
+            .intro {
+                height: 600px;
+            }
+        }
+    
+    </style>
 </head>
 <body>
 
-<div class="parallax-1">
+<header>
+        
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#"><strong>Kevin de Bree</strong></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#aboutMe">About Me <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+</header>
+
+<section class="parallax-1">
            <div class="full-bg-img">
                 <div class="container flex-center">
                     <div class="row mt-5">
@@ -27,32 +83,31 @@
                                 <h1 class="display-2 mb-2 animated fadeInDown" data-wow-delay="0.2s">Kevin de Bree</h1>
                                 <h4 class="font-up mb-3 mt-1 font-bold animated fadeInDown" data-wow-delay="0.3s">Full Stack Developer</h4>
                                 <h5 class="font-up mb-3 mt-1 font-bold animated fadeInDown" data-wow-delay="0.4s">Data Analyst</h5>
-                                <a href="#aboutMe" class="btn btn-indigo btn-lg animated fadeInDown" data-wow-delay="0.5s">About Me</a> <a href="#portfolio" class="btn btn-light-blue btn-lg animated fadeInDown" data-wow-delay="0.5s">Portfolio</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-</div>
+</section>
 
-<div id="aboutMe" style="height: 1000px;width:100%">
+<section id="aboutMe" style="height: 100%; width: 100%">
 
-  <div class="container">
+  <div class="container flex">
     <div class="row">
-      <div class="col-md-12 mb-3">
+      <div class="col-md-12">
         <h1 class="display-4 mb-2 animated fadeIn" data-wow-delay="0.4s">About Me</h1>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12 mb-3">
-        <p class="animated fadeIn" data-wow-delay="0.2s">I'm a software engineer with a background in research and data science. I'm currently launching my new career in web development in the Greater Los Angeles Area. I'm passionate about learning new concepts and technologies and working with dynamic teams.</p>
+        <p class="animated fadeIn" data-wow-delay="0.2s">I'm a developer with a background in research and data science. I'm currently launching my new career in web development in the Greater Los Angeles Area. I'm passionate about learning new concepts and technologies and working with dynamic teams.</p>
       </div>
     </div>
     <div class="row">
       <div class="col md-6 col-sm-6 animated fadeInLeft" data-wow-delay="0.4s">
         <i class="icon icon-tv animated bounceIn" data-wow-delay="0.5s" style="font-size: 70px"></i>
         <h3>Front-End Development</h3>
-          <p>I have experience with designing websites and applications using modern web development libraries</p>
+          <p>Experience with designing websites and applications using modern web development libraries</p>
           <ul>
             <li>HTML5</li>
             <li>CSS3</li>
@@ -64,7 +119,7 @@
       <div class="col md-6 col-sm-6 animated fadeInRight" data-wow-delay="0.4s">
         <i class="icon icon-database" style="font-size: 70px"></i>
         <h3>Back-End Development</h3>
-          <p>I have extensive experience with routing and querying databases, along with experience with Web APIs.</p>
+          <p>Extensive experience with routing and querying databases, along with experience with Web APIs.</p>
           <ul>
             <li>MySQL- with Sequelize</li>
             <li>MongoDB - using Mongoose</li>
@@ -74,12 +129,10 @@
             <li>RESTful API</li>
           </ul>
       </div>
-    </div>
-    <div class="row">
       <div class="col md-6 col-sm-6 animated fadeInLeft" data-wow-delay="0.4s">
         <i class="icon icon-mobile" style="font-size: 70px"></i>
         <h3>Responsive Design</h3>
-          <p>I have experience building applications that utilize front-end frameworks to be responsive across multiple platforms and devices</p>
+          <p>Experience building applications that utilize front-end frameworks to be responsive across multiple platforms and devices</p>
           <ul>
             <li>Bootstrap</li>
             <li>Material Design Lite</li>
@@ -88,7 +141,7 @@
       <div class="col md-6 col-sm-6 animated fadeInRight" data-wow-delay="0.4s">
         <i class="icon icon-code-fork" style="font-size: 70px"></i>
         <h3>Version Control, CLI, and Deployment</h3>
-          <p>I have experience working and collaborating on projects with other developers using Version Control platforms such as Git.</p>
+          <p>Experience working and collaborating on projects with other developers using Version Control platforms such as Git.</p>
           <ul>
             <li>Git</li>
             <li>Github</li>
@@ -99,16 +152,11 @@
       </div>
     </div>
   </div>
+</section>
 
 
+<div class="parallax-2" style="height: 500px; width: 100%"></div>
 
-
-</div>
-
-
-<div class="parallax-2">
-
-</div>
 
 <div id="portfolio" style="height: 100%;width:100%">
 
@@ -118,11 +166,25 @@
           <h1 class="display-4 mb-2 animated fadeIn" data-wow-delay="0.4s">My Portfolio</h1>
         </div>
   </div>
-  <div class="text-center">
-    <a href="https://github.com/kpdebree/GOT-Trivia"><img src="https://i.imgur.com/3tOimXU.png" style="height:250px;width:500px"></a>
-    <a href="https://lit-sierra-90585.herokuapp.com/"><img src="https://i.imgur.com/wdLWboV.png" style="height:250px;width:500px"></a>
-    <a href="https://kpdebree.github.io/StarWars-Game/"><img src="https://i.imgur.com/TbI2z14.png" style="height:250px;width:500px"></a>
-    <a href="https://github.com/philippe101/Take-a-Hike"><img src="https://i.imgur.com/D4F9FBs.png" style="height:250px;width:500px"></a>
+  <div class="row">
+    <div class="text-center">
+      <div class="row">
+        <div class="col md-6 col-sm-6">
+          <a href="https://github.com/kpdebree/GOT-Trivia"><img src="https://i.imgur.com/3tOimXU.png" style="height:250px;width:500px"></a>
+        </div>
+        <div class="col md-6 col-sm-6">
+          <a href="https://lit-sierra-90585.herokuapp.com/"><img src="https://i.imgur.com/wdLWboV.png" style="height:250px;width:500px"></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col md-6 col-sm-6">
+          <a href="https://kpdebree.github.io/StarWars-Game/"><img src="https://i.imgur.com/TbI2z14.png" style="height:250px;width:500px"></a>
+        </div>
+        <div class="col md-6 col-sm-6">
+          <a href="https://github.com/philippe101/Take-a-Hike"><img src="https://i.imgur.com/D4F9FBs.png" style="height:250px;width:500px"></a>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
   
