@@ -86,6 +86,12 @@ body, html {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
 }
 
+.card {
+  display: table-cell;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
 section {
   height: 100%;
   display: block;
@@ -103,7 +109,6 @@ section {
 div.social.about-social-circle {
   display: flex;
   justify-content: center !important;
-  border-bottom: 2px solid white;
   padding-bottom: 5vh;
 }
 
