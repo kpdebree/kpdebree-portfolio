@@ -1,16 +1,36 @@
 /* Your custom styles */
 body, html {
     height: 100%;
+    background-color: #818892;
+}
+
+.title {
+  font-size: 70px;
+  padding-top: 30%;
+  color: white;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.subtitle {
+  font-size: 35px;
+  top: 50%;
+  color: white;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .navbar {
-  height: 80px;
+  height: 60px;
   display: inline;
   background-color: transparent;
   border: none;
   color: white;
   z-index: 100;
   transition: background-color 1s ease 0s;
+}
+
+.skill, .portfolio-title {
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
 }
 
 .parallax-1 {
@@ -22,7 +42,7 @@ body, html {
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -41,6 +61,8 @@ body, html {
     background-size: cover;
 }
 
+
+
 .parallax-3 {
     /* The image used */
     background-image: url("../img/summerbreeze.gif");
@@ -55,16 +77,34 @@ body, html {
     background-size: cover;
 }
 
+#aboutMe {
+  padding: 3em 20%;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+#portfolio {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
 section {
   height: 100%;
   display: block;
-  margin-bottom: 25px;
+  text-align: justify;
+  padding-bottom: 25px;
   max-height: 100%;
+}
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 1200px;
 }
 
 div.social.about-social-circle {
   display: flex;
-  justify-content: center;
+  justify-content: center !important;
+  border-bottom: 2px solid white;
+  padding-bottom: 5vh;
 }
 
 .social p {
@@ -79,6 +119,7 @@ div.social.about-social-circle {
   font-size: 16px;
   background: #51a3d2;
   color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,4 +144,12 @@ div.social.about-social-circle {
 
 #social-row {
   margin: 2em 0 4em 0;
+  text-align: center;
+  padding-top: 10vh;
+  padding-left: 50%;
+}
+
+.item-spacing {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }

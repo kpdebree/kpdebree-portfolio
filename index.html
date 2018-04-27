@@ -19,14 +19,14 @@
   <style>
 
         .top-nav-collapse {
-            background-color: #387c42 !important; 
+            background-color: #818892 !important; 
         }
         .navbar:not(.top-nav-collapse) {
             background: transparent !important;
         }
         @media (max-width: 768px) {
             .navbar:not(.top-nav-collapse) {
-                background: #387c42 !important;
+                background: #818892 !important;
             } 
         }
         .intro-1 {
@@ -58,7 +58,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="#aboutMe">About Me <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
@@ -76,13 +76,13 @@
 
 <section class="parallax-1">
            <div class="full-bg-img">
-                <div class="container flex-center">
+                <div class="container flex-center text-center">
                     <div class="row mt-5">
                         <div class="col-md-12 mb-3">
                             <div class="text-center">
-                                <h1 class="display-2 mb-2 animated fadeInDown" data-wow-delay="0.2s">Kevin de Bree</h1>
-                                <h4 class="font-up mb-3 mt-1 font-bold animated fadeInDown" data-wow-delay="0.3s">Full Stack Developer</h4>
-                                <h5 class="font-up mb-3 mt-1 font-bold animated fadeInDown" data-wow-delay="0.4s">Data Analyst</h5>
+                                <h1 class="animated fadeInDown title" data-wow-delay="0.2s">Kevin de Bree</h1>
+                                <h4 class="animated fadeInDown subtitle" data-wow-delay="0.3s">Full Stack Developer</h4>
+                                <h5 class="animated fadeInDown subtitle" data-wow-delay="0.4s">Data Analyst</h5>
                             </div>
                         </div>
                     </div>
@@ -90,21 +90,16 @@
             </div>
 </section>
 
-<section id="aboutMe" style="height: 100%; width: 100%">
-
-  <div class="container flex">
+<div id="aboutMe" style="height:auto;">
+  <div class="container" style="height:auto;">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-12 skill mb-3">
         <h1 class="display-4 mb-2 animated fadeIn" data-wow-delay="0.4s">About Me</h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12 mb-3">
         <p class="animated fadeIn" data-wow-delay="0.2s">I'm a developer with a background in research and data science. I'm currently launching my new career in web development in the Greater Los Angeles Area. I'm passionate about learning new concepts and technologies and working with dynamic teams.</p>
       </div>
     </div>
     <div class="row">
-      <div class="col md-6 col-sm-6 animated fadeInLeft" data-wow-delay="0.4s">
+      <div class="col md-6 col-sm-6 animated skill fadeInLeft" data-wow-delay="0.4s">
         <i class="icon icon-tv animated bounceIn" data-wow-delay="0.5s" style="font-size: 70px"></i>
         <h3>Front-End Development</h3>
           <p>Experience with designing websites and applications using modern web development libraries</p>
@@ -115,11 +110,12 @@
             <li>jQuery</li>
             <li>ReactJS</li>
           </ul>
+          <br>
       </div>
-      <div class="col md-6 col-sm-6 animated fadeInRight" data-wow-delay="0.4s">
+      <div class="col md-6 col-sm-6 animated skill fadeInRight" data-wow-delay="0.4s">
         <i class="icon icon-database" style="font-size: 70px"></i>
         <h3>Back-End Development</h3>
-          <p>Extensive experience with routing and querying databases, along with experience with Web APIs.</p>
+          <p>Extensive experience with object-oriented programming, in addition to routing and querying databases.</p>
           <ul>
             <li>MySQL- with Sequelize</li>
             <li>MongoDB - using Mongoose</li>
@@ -128,8 +124,11 @@
             <li>MVC Architecture with React</li>
             <li>RESTful API</li>
           </ul>
+          <br>
       </div>
-      <div class="col md-6 col-sm-6 animated fadeInLeft" data-wow-delay="0.4s">
+    </div>
+    <div class="row">
+      <div class="col md-6 col-sm-6 animated skill fadeInLeft" data-wow-delay="0.4s" style="height:auto;">
         <i class="icon icon-mobile" style="font-size: 70px"></i>
         <h3>Responsive Design</h3>
           <p>Experience building applications that utilize front-end frameworks to be responsive across multiple platforms and devices</p>
@@ -137,8 +136,9 @@
             <li>Bootstrap</li>
             <li>Material Design Lite</li>
           </ul>
+          <br>
       </div>
-      <div class="col md-6 col-sm-6 animated fadeInRight" data-wow-delay="0.4s">
+      <div class="col md-6 col-sm-6 animated skill fadeInRight" data-wow-delay="0.4s" style="height:auto;">
         <i class="icon icon-code-fork" style="font-size: 70px"></i>
         <h3>Version Control, CLI, and Deployment</h3>
           <p>Experience working and collaborating on projects with other developers using Version Control platforms such as Git.</p>
@@ -149,38 +149,40 @@
             <li>Google Firebase</li>
             <li>Heroku</li>
           </ul>
+          <br>
       </div>
     </div>
   </div>
-</section>
+</div>
 
 
-<div class="parallax-2" style="height: 500px; width: 100%"></div>
+
+<div class="parallax-2"></div>
 
 
 <div id="portfolio" style="height: 100%;width:100%">
 
 <div class="container">
   <div class="row">
-        <div class="col-md-12 mb-3">
+        <div class="portfolio-title col-md-12 mb-3">
           <h1 class="display-4 mb-2 animated fadeIn" data-wow-delay="0.4s">My Portfolio</h1>
         </div>
   </div>
   <div class="row">
     <div class="text-center">
       <div class="row">
-        <div class="col md-6 col-sm-6">
+        <div class="portfolio-item col md-6 col-sm-6">
           <a href="https://github.com/kpdebree/GOT-Trivia"><img src="https://i.imgur.com/3tOimXU.png" style="height:250px;width:500px"></a>
         </div>
-        <div class="col md-6 col-sm-6">
+        <div class="portfolio-item col md-6 col-sm-6">
           <a href="https://lit-sierra-90585.herokuapp.com/"><img src="https://i.imgur.com/wdLWboV.png" style="height:250px;width:500px"></a>
         </div>
       </div>
       <div class="row">
-        <div class="col md-6 col-sm-6">
+        <div class="portfolio-item col md-6 col-sm-6">
           <a href="https://kpdebree.github.io/StarWars-Game/"><img src="https://i.imgur.com/TbI2z14.png" style="height:250px;width:500px"></a>
         </div>
-        <div class="col md-6 col-sm-6">
+        <div class="portfolio-item col md-6 col-sm-6">
           <a href="https://github.com/philippe101/Take-a-Hike"><img src="https://i.imgur.com/D4F9FBs.png" style="height:250px;width:500px"></a>
         </div>
       </div>
@@ -193,21 +195,28 @@
 <div class="parallax-3"></div>
 
 <div id="contact" style="height: 500px;width:100%">
-
-  
-
-    <div class="row">
-      <div class="col-md-12 mb-3 animated fadeInLeft" data-wow-delay="0.4s">
-        <div class="row">
+    <div class="container">
+      <div class="row skill justify-content-center">
+        <div class="col-8 text-center">
+          <h1 class="item-spacing">Want to get in touch?</h2>
+          <p>I am currently looking for work opportunities in software engineering or fullstack development. I am also interested in collaborating in open source projects.</p>
         </div>
-        <div id="social-row" class="row">
-          <div class= "social about-social-circle">
-            <div class="text-center">
-              <p><a href="https://www.linkedin.com/in/kevin-de-bree-01873470/" target="_blank"><i id="linkedin" class="icon-linkedin"></i></a></p>
+      </div>
+      <div class="row skill justify-content-center">
+        <div class="col-8 text-center">
+          <h1 class="item-spacing">Connect With Me!</h2>
+        </div>
+      </div>
+      <div class="row social about-social-circle">
+          <div class="col-3 col-lg-2 align-self-center">
+            <p><a href="https://www.linkedin.com/in/kevin-de-bree-01873470/" target="_blank"><i id="linkedin" class="icon-linkedin"></i></a></p>
+            </div>
+            <div class="col-3 col-lg-2 align-self-center">
               <p><a href="https://github.com/kpdebree" target="_blank"><i id="github" class="icon-github"></i></a></p>
+            </div>
+            <div class="col-3 col-lg-2 align-self-center">
               <p><a href="https://www.facebook.com/kevin.debree1" target="_blank"><i id="facebook" class="icon-facebook"></i></a></p>
             </div>
-          </div>
         </div>
       </div>
       <div class="col md-6 col-sm-6 animated fadeInRight" data-wow-delay="0.4s">
